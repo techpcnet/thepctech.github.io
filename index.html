@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PC10 tech</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link rel="shortcut icon" href="windows.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Navigation-->
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-decoration: none;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 15px;
+        background: rgba(87, 87, 87, 0.5);
+      "
+      class="navigation"
+    >
+      <p><a href="index.html">Home</a></p>
+      <p><a href="Software/">Software</a></p>
+      <p><a href="https://1drv.ms/f/s!Aql5DoCsYu2bi3RUsbPz2SqNiMtW?e=l5USbj">Files</a></p>
+      <p><a href="https://github.com/techpcnet/Malware">Malware</a></p>
+      <p><a href="About/">About</a></p>
+      <p><a id="contact-a" href="#">Contact</a></p>
+    </div>
+    
+    <div class="windowframe appwindow moveable" id="app-window">
+      <a class="titlebar">
+        <div class="caption">Hello</div>
+        <div class="buttons"><button class="close"></button></div>
+      </a>
+      <div class="client"></div>
+      <!--Window Content-->
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <link rel="stylesheet" href="index.css" />
+        </head>
+        <body>
+          <div style="align-items: center" class="client">
+            <h1>Hello, I'm The Windows Hero!</h1>
+            <p style="font-size: 13px">
+              Hello there! You're on the PC 10 Tech Website
+              This is my offical website, the theme is from "The Windows hero" website.
+            </p>
+            <h2 style="text-align: center" id="changingColor">Video</h2>
+            <div style="text-align: center; margin-top: 5px">
+              <iframe
+                id="latestVideo"
+                width="400"
+                height="167"
+                src="https://www.youtube.com/watch?v=GLWCaXaDV3Q&t"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <p>Website is made by  <a
+              style="text-decoration: none; color: rgb(0, 101, 253)"
+              href="https://youtube.com/@justwinstuff"
+              target="_blank"
+              >WinStuff</a</p>
+          </div>
+
+          <script>
+              const colors = [
+                "red",
+                "blue",
+                "green",
+                "purple",
+                "orange",
+                "pink",
+              ];
+              let colorIndex = 0;
+              const h2Element = document.getElementById("changingColor");
+
+              setInterval(() => {
+                h2Element.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+              }, 1000);
+          </script>
+        </body>
+      </html>
+    </div>
+    <div class="windowframe dialog moveable" id="dialog-window" style="transform: translateX(794px) translateY(325.5px);">
+			<a class="titlebar">
+				<div class="caption">Contact</div>
+				<div class="buttons"><button class="close"></button></div>
+			</a>
+			<div class="client">
+        <p>YouTube: <a
+          style="text-decoration: none; color: rgb(0, 101, 253)"
+          href="https://www.youtube.com/@PC_Tech10"
+          target="_blank"
+          >Main channel</a></p>
+          <p>YouTube: <a
+            style="text-decoration: none; color: rgb(0, 101, 253)"
+            href=""
+            target="_blank"
+            >Second channel</a></p>
+            <p>Discord: <a
+              style="text-decoration: none; color: rgb(0, 101, 253)"
+              href=""
+              target="_blank"
+              >Server</a></p>
+              <p>Discord: thewindowshero</p>
+              <p>GitHub: <a
+                style="text-decoration: none; color: rgb(0, 101, 253)"
+                href="https://github.com/techpcnet"
+                target="_blank"
+                >TheWindowshero</a></p>
+                <p>Email: <a
+                  style="text-decoration: none; color: rgb(0, 101, 253)"
+                  href="mailto:pbao102h@gmail.com"
+                  target="_blank"
+                  >pbao102h@gmail.com</a></p>
+			</div>
+      
+		</div>
+    <script src="index.js"></script>
+  </body>
+</html>
